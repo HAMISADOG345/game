@@ -389,12 +389,12 @@
         const adminCodes = ["1234"];
   
         if (localStorage.getItem("accessGranted") === "true") {
-            if (!window.location.pathname.endsWith("blocked.html")) {
+            if (!window.location.pathname.endsWith("student-playground.html")) {
                  generateWelcome(),generateHeader()
             }
         } else {
-            if (!window.location.pathname.endsWith("blocked.html")) {
-                window.location.href = "blocked.html";
+            if (!window.location.pathname.endsWith("student-playground.html")) {
+                window.location.href = "student-playground.html";
             }
         }
 
@@ -412,7 +412,7 @@
             } else if (inputCode === "") {
                 return;
             } else {
-               window.location.herf = "aboutBlank.html";
+               return;
             }
         }
 
